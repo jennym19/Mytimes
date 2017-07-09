@@ -3,6 +3,7 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  background-color: white;
   text-align: center;
   color:MediumAquamarine;
   width:100%;
@@ -12,6 +13,7 @@ header {
   border-bottom: 1px solid black;
   position:fixed;
   z-index: 5;
+  top:0px;
 }
 
 .logo {
@@ -36,4 +38,76 @@ header {
 a {
   color:black;
   padding: 10px;
+}
+
+#maincontainer {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  position:relative;
+  top:80px;
+}
+
+.largecolumn {
+  flex-direction:column;
+  width: 630px;
+  border:1px solid black;
+}
+
+.phish {
+  border:2px solid black;
+}
+
+.phish .picture {
+  border:1px solid black;
+}
+
+.orca {
+  border:3px solid black;
+}
+
+.orca .earth{
+  border:2px solid black;
+}
+
+.burger {
+  border:3px solid black;
+}
+
+.cameras {
+  border:2px solid black;
+}
+
+
+.mediumcolumn {
+  flex-direction: column;
+  width:300px;
+  border:1px solid black;
+}
+
+.FBI {
+  border:2px solid black;
+}
+
+.cats {
+  border:1px solid black;
+}
+
+.cats .picture {
+  border:2px solid black;
+}
+
+.smallcolumn {
+  flex-direction:column;
+  width: 240px;
+  border:1px solid black;
+}
+
+.cookie {
+  border:1px solid black;
+}
+
+.bites {
+  border:2px solid black;
 }
