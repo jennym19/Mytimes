@@ -45,7 +45,6 @@ a {
   align-items: center;
   align-items: start;
   justify-content: space-between;
-  border: 1px solid black;
   position:relative;
   top:80px;
 }
@@ -53,16 +52,13 @@ a {
 .largecolumn {
   flex-direction:column;
   width: 630px;
-  border:1px solid black;
 }
 
-.phish {
-  border:2px solid black;
-}
+.phish {}
+
 
 .phish .picture {
   display:flex;
-  border:1px solid black;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
   background-size:auto;
   min-height:300px;
@@ -76,11 +72,11 @@ a {
 }
 
 .orca {
-  border:3px solid black;
-}
-
-.orca .earth{
-  border:2px solid black;
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  max-width:295px;
+  padding-right:10px;
 }
 
 .earth .picture {
@@ -90,11 +86,25 @@ a {
 }
 
 .burger {
-  border:3px solid black;
+  display:inline-flex;
+  flex-direction: column;
+  align-items:center;
+  max-width:295px;
+  padding-left:10px;
+}
+
+.earth {
+  display:inline-flex;
+  max-width:295px;
+  padding-right:10px;
+  padding-top:30px;
 }
 
 .cameras {
-  border:2px solid black;
+  display:inline-flex;
+  max-width:295px;
+  padding-left:10px;
+  padding-top:30px;
 }
 
 .cameras .picture {
@@ -107,36 +117,40 @@ a {
 .mediumcolumn {
   flex-direction: column;
   width:300px;
-  border:1px solid black;
 }
 
-.FBI {
-  border:2px solid black;
-}
-
-.cats {
-  border:1px solid black;
-}
 
 .cats .picture {
   display:flex;
-  border:2px solid black;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
   min-height:300px;
 }
 
 .smallcolumn {
+  display:flex;
   flex-direction:column;
   width: 240px;
-  border:1px solid black;
+  align-items:center;
 }
 
-.cookie {
-  border:1px solid black;
+.bites h1{
+  font-size: 16px;
+  font-weight: bold;
+  text-align:center;
+  padding-bottom:30px;
 }
 
-.bites {
-  border:2px solid black;
+.bites li {
+  display:flex;
+  list-style-type: none;
+  flex-direction: column;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 10px 20px;
+  border-bottom:1px solid black;
+  width:240px;
 }
 
 .picture p {
